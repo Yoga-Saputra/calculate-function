@@ -44,5 +44,5 @@ jobs:
           script: |
             cd ~/apps/calculate-function
             git pull origin master
-            npm install
-            pm2 restart all
+            ~/.nvm/versions/node/v12.19.0/bin/npm install
+            ~/.nvm/versions/node/v12.19.0/bin/pm2 restart all
