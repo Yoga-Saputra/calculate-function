@@ -42,6 +42,7 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
+            whoami
             cd ~/apps/calculate-function
             git pull origin master
             ~/.nvm/versions/node/v12.19.0/bin/npm install
