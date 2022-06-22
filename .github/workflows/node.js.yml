@@ -42,4 +42,5 @@ jobs:
           key: ${{ secrets.KEY }}
           port: ${{ secrets.PORT }}
           script: |
-            ll
+            whoami
+            ls -al
