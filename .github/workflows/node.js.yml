@@ -43,6 +43,7 @@ jobs:
           port: ${{ secrets.PORT }}
           script: |
             cd /apps/calculate-function
+            pm2 start npm -- start --name calculatefunction
             git pull origin master
             ~/.nvm/versions/node/v12.19.0/bin/npm install
             ~/.nvm/versions/node/v12.19.0/bin/pm2 restart all
