@@ -1,7 +1,7 @@
 var assert = require('assert');
 const calculate = require('../routes/handlers/calculate');
 
-//Unit testing
+//Unit testing for node js
 describe('Calculate functions', function() {
   describe('Add function', function() {
     it('should return 5', function() {
